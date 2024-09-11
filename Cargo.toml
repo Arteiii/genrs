@@ -1,0 +1,19 @@
+[package]
+name = "genrs"
+version = "0.1.0"
+edition = "2021"
+
+
+[lib]
+name = "genrs_lib"
+path = "lib/lib.rs"
+
+[[bin]]
+name = "genrs"
+path = "bin/main.rs"
+
+[dependencies]
+clap = "4.5.17"
+rand = "0.8.5"
+hex = "0.4.3"
+base64 = "0.22.1"
