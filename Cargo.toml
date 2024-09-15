@@ -1,7 +1,7 @@
 [package]
 name = "genrs"
 description = "command-line tool and Library for generating random keys"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 
 license = "Apache-2.0"
@@ -29,7 +29,7 @@ name = "genrs"
 path = "bin/main.rs"
 
 [dependencies]
-clap = "4.5.17"
+clap = { version = "4.5.17", features = ["wrap_help", "cargo"] }
 rand = "0.8.5"
 hex = "0.4.3"
 base64 = "0.22.1"
