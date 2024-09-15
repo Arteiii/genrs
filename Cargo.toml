@@ -1,8 +1,24 @@
 [package]
 name = "genrs"
+description = "command-line tool and Library for generating random keys"
 version = "0.1.0"
 edition = "2021"
 
+license = "Apache-2.0"
+readme = "README.md"
+authors = ["Arteii <ben.arteii@proton.me>"]
+categories = ["command-line-interface"]
+repository = "https://github.com/Arteiii/genrs"
+homepage = "https://arteiii.github.io"
+
+
+include = [
+    "Cargo.toml",
+    "Cargo.lock",
+    "LICENSE",
+    "lib/**/*",
+    "bin/**/*",
+]
 
 [lib]
 name = "genrs_lib"
@@ -17,3 +33,4 @@ clap = "4.5.17"
 rand = "0.8.5"
 hex = "0.4.3"
 base64 = "0.22.1"
+uuid = { version = "1.10.0", features = ["v1", "v3", "v4", "v5"] }
